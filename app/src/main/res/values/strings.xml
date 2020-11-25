@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SQLite Application</string>
+    <string name="action_add">Add class</string>
+    <string name="action_delete">Delete class</string>
+    <string name="action_edit">Edit class</string>
+    <string name="class_id">Class ID:</string>
+    <string name="class_name">Class:</string>
+    <string name="class_description">Description:</string>
+    <string name="class_location">Location:</string>
+    <string name="class_instructor">Instructor:</string>
+    <string name="class_time">Time:</string>
+    <string name="class_date">Date:</string>
+</resources>

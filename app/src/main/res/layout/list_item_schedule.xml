@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/scheduleIdLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/class_id"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleIdData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scheduleIdData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Class ID Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scheduleNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/class_name"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleNameData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scheduleNameData" />
+
+    <TextView
+        android:id="@+id/scheduleNameData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Class Name Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleIdData" />
+
+    <TextView
+        android:id="@+id/scheduleDescriptionLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/class_description"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleDescriptionData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleNameData" />
+
+    <TextView
+        android:id="@+id/scheduleDescriptionData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Class Description Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleNameData" />
+
+    <TextView
+        android:id="@+id/scheduleLocationLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/class_location"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleLocationData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleDescriptionData" />
+
+
+    <TextView
+        android:id="@+id/scheduleLocationData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Class Location Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleDescriptionData" />
+
+    <TextView
+        android:id="@+id/scheduleInstructorLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/class_instructor"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleInstructorData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleLocationData" />
+
+    <TextView
+        android:id="@+id/scheduleInstructorData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Class Instructor Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleLocationData" />
+
+    <TextView
+        android:id="@+id/scheduleDateLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/class_date"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleDateData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleTimeData" />
+
+    <TextView
+        android:id="@+id/scheduleDateData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Class Date Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleTimeData" />
+
+    <TextView
+        android:id="@+id/scheduleTimeLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/class_time"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleTimeData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleInstructorData" />
+
+    <TextView
+        android:id="@+id/scheduleTimeData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Class Time Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleInstructorData" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="331dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

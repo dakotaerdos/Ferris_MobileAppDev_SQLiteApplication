@@ -1,0 +1,17 @@
+<!-- res/appbar_menu/appbar_menu.xml -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_add"
+        android:title="@string/action_add"
+        android:icon="@drawable/add_class"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/edit_class"
+        android:title="@string/action_edit"
+        app:showAsAction="always" />
+
+</menu>
